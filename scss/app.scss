@@ -1,0 +1,182 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+// Global styles
+@include foundation-global-styles;
+@include foundation-forms;
+@include foundation-typography;
+
+// Grids (choose one)
+@include foundation-xy-grid-classes;
+// @include foundation-grid;
+// @include foundation-flex-grid;
+
+// Generic components
+@include foundation-button;
+@include foundation-button-group;
+@include foundation-close-button;
+@include foundation-label;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-switch;
+@include foundation-table;
+// Basic components
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-dropdown;
+@include foundation-pagination;
+@include foundation-tooltip;
+
+// Containers
+@include foundation-accordion;
+@include foundation-media-object;
+@include foundation-orbit;
+@include foundation-responsive-embed;
+@include foundation-tabs;
+@include foundation-thumbnail;
+// Menu-based containers
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-accordion-menu;
+@include foundation-drilldown-menu;
+@include foundation-dropdown-menu;
+
+// Layout components
+@include foundation-off-canvas;
+@include foundation-reveal;
+@include foundation-sticky;
+@include foundation-title-bar;
+@include foundation-top-bar;
+
+// Helpers
+@include foundation-float-classes;
+@include foundation-flex-classes;
+@include foundation-visibility-classes;
+// @include foundation-prototype-classes;
+
+// Motion UI
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+$primary: #001a70;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p > a {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+    color: $primary;
+    font-family: 'Roboto Slab', serif;
+}
+
+.top {
+    padding-top:10px;
+}
+
+#search input {
+    display: inline;
+    width:50%;
+}
+
+#search button {
+    margin-top:15px;
+}
+
+a.collection, a.item-file {
+    display:block;
+}
+
+.items .cell {
+    margin-bottom: 1rem;
+}
+
+.metadata-element {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-right:1rem;
+}
+
+.item-extra {
+    margin-top:1rem;
+}
+
+.ital {
+    font-style: italic;
+}
+
+.logo {
+    width:175px;
+    float:left;
+}
+
+hr {
+    border-bottom:1px solid #a4d65e;
+}
+
+#colors h2 {
+    display:block;
+    width:100%;
+    border-bottom:5px solid #a4d65e;
+    margin-bottom:1rem;
+}
+
+.color {
+    margin-bottom: 1rem;
+}
+
+.color div:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+#color-1 {
+    background: #001a70;
+}
+
+#color-2 {
+    background: #a4d65e;
+}
+
+#color-3 {
+    background: #f7ea48;
+}
+
+#content .button {
+    background: rgb(164,214,94);
+    color:#001a70;
+}
+
+#content .button:hover {
+    background: rgba(164,214,94, 0.75);
+}
+
+.pullquote {
+        border-left:10px solid #f7ea48;
+        background-color: rgba(0,26,112,0.75);
+        font-size:1.5rem;
+        color:#fff;
+        padding: 2rem;
+        float:right;
+    }
+
+.border {
+        border-left: 2px solid #f7ea48;
+        padding-left:1rem;
+
+        a {
+            display:block;
+        }
+         a:hover {
+            text-decoration: underline;
+        }
+    }
